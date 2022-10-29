@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221016 18:11:44.734" rpa="false" schemaversion="3">
+<suite id="s1" name="TransferFundsAndPayBills" source="C:\Users\Omistaja\PycharmProjects\Zerobank\TransferFundsAndPayBills.robot">
+<test id="s1-t1" name="Verify valid login" line="9">
+<kw name="Valid login for zerobank Apps" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221016 18:11:45.120" level="INFO">Opening browser 'chrome' to base url 'http://zero.webappsecurity.com/'.</msg>
+<status status="PASS" starttime="20221016 18:11:45.120" endtime="20221016 18:11:48.320"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:48.321" level="INFO">Clicking element 'id:signin_button'.</msg>
+<status status="PASS" starttime="20221016 18:11:48.321" endtime="20221016 18:11:48.622"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LOGIN}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:48.624" level="INFO">Typing text 'username' into text field 'name:user_login'.</msg>
+<status status="PASS" starttime="20221016 18:11:48.623" endtime="20221016 18:11:48.758"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USER_PASSWD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:48.759" level="INFO">Typing text 'password' into text field 'id:user_password'.</msg>
+<status status="PASS" starttime="20221016 18:11:48.758" endtime="20221016 18:11:48.914"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:48.915" level="INFO">Clicking element 'name:submit'.</msg>
+<status status="PASS" starttime="20221016 18:11:48.915" endtime="20221016 18:11:49.921"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20221016 18:11:49.921" endtime="20221016 18:11:50.408"/>
+</kw>
+<status status="PASS" starttime="20221016 18:11:45.120" endtime="20221016 18:11:50.408"/>
+</kw>
+<status status="PASS" starttime="20221016 18:11:45.120" endtime="20221016 18:11:50.409"/>
+</test>
+<test id="s1-t2" name="Verify that user is on the transfer funds page" line="12">
+<kw name="Login to transfer funds page" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221016 18:11:50.414" level="INFO">Opening browser 'chrome' to base url 'http://zero.webappsecurity.com/'.</msg>
+<status status="PASS" starttime="20221016 18:11:50.414" endtime="20221016 18:11:53.522"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:53.523" level="INFO">Clicking element 'id:signin_button'.</msg>
+<status status="PASS" starttime="20221016 18:11:53.522" endtime="20221016 18:11:53.837"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LOGIN}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:53.838" level="INFO">Typing text 'username' into text field 'name:user_login'.</msg>
+<status status="PASS" starttime="20221016 18:11:53.837" endtime="20221016 18:11:54.015"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USER_PASSWD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:54.016" level="INFO">Typing text 'password' into text field 'id:user_password'.</msg>
+<status status="PASS" starttime="20221016 18:11:54.016" endtime="20221016 18:11:54.199"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:54.200" level="INFO">Clicking element 'name:submit'.</msg>
+<status status="PASS" starttime="20221016 18:11:54.199" endtime="20221016 18:11:55.239"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20221016 18:11:55.240" endtime="20221016 18:11:55.770"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TRANSFERFUNDS_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:11:55.771" level="INFO">Clicking element 'id:transfer_funds_link'.</msg>
+<status status="PASS" starttime="20221016 18:11:55.771" endtime="20221016 18:11:56.075"/>
+</kw>
+<status status="PASS" starttime="20221016 18:11:50.413" endtime="20221016 18:11:56.075"/>
+</kw>
+<status status="PASS" starttime="20221016 18:11:50.412" endtime="20221016 18:11:56.076"/>
+</test>
+<test id="s1-t3" name="Verify that user is on a pay bills page" line="15">
+<kw name="Login to pay bills page" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221016 18:11:56.083" level="INFO">Opening browser 'chrome' to base url 'http://zero.webappsecurity.com/'.</msg>
+<status status="PASS" starttime="20221016 18:11:56.082" endtime="20221016 18:12:02.824"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:12:02.825" level="INFO">Clicking element 'id:signin_button'.</msg>
+<status status="PASS" starttime="20221016 18:12:02.824" endtime="20221016 18:12:03.172"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LOGIN}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221016 18:12:03.174" level="INFO">Typing text 'username' into text field 'name:user_login'.</msg>
+<status status="PASS" starttime="20221016 18:12:03.173" endtime="20221016 18:12:03.397"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USER_PASSWD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221016 18:12:03.398" level="INFO">Typing text 'password' into text field 'id:user_password'.</msg>
+<status status="PASS" starttime="20221016 18:12:03.397" endtime="20221016 18:12:03.586"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:12:03.587" level="INFO">Clicking element 'name:submit'.</msg>
+<status status="PASS" starttime="20221016 18:12:03.586" endtime="20221016 18:12:04.803"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20221016 18:12:04.804" endtime="20221016 18:12:05.224"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TRANSFERFUNDS_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:12:05.225" level="INFO">Clicking element 'id:transfer_funds_link'.</msg>
+<status status="PASS" starttime="20221016 18:12:05.225" endtime="20221016 18:12:05.578"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PAYBILLS_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221016 18:12:05.580" level="INFO">Clicking element 'id:pay_bills_tab'.</msg>
+<status status="PASS" starttime="20221016 18:12:05.579" endtime="20221016 18:12:07.340"/>
+</kw>
+<status status="PASS" starttime="20221016 18:11:56.081" endtime="20221016 18:12:07.340"/>
+</kw>
+<status status="PASS" starttime="20221016 18:11:56.080" endtime="20221016 18:12:07.343"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221016 18:12:07.348" endtime="20221016 18:12:16.306"/>
+</kw>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20221016 18:11:44.734" endtime="20221016 18:12:16.306"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="TransferFundsAndPayBills">TransferFundsAndPayBills</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
