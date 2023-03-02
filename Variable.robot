@@ -3,7 +3,7 @@ Documentation  Variables for Zerobank Apps
 
 *** Variables ***
 ${URL}  http://zero.webappsecurity.com/
-${BROWSER}  chrome
+${BROWSER}  edge
 ${LOGIN_BTN}  id:signin_button
 ${LOGIN}    name:user_login
 ${USER_PASSWD}  id:user_password
